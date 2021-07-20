@@ -1,0 +1,28 @@
+﻿@if (ViewBag.Title == null)
+{
+    <h3>An Error Ocurred while Processing Your Request.
+    The support Team is  notified and we are working on the fix </h3>
+<h5>Please contact us at pragim@pragimtech.com for further assitance</h5>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.Title</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
+@*<hr />*@
+@*<h3>Exception Details: </h3>
+<div class="alert alert-danger">
+    <h5> Expection Path</h5>
+    <hr />
+    <p>@ViewBag.ErrorPath</p>
+</div>
+<div class="alert alert-danger">
+    <h5> Expection message</h5>
+    <hr />
+    <p>@ViewBag.ErrorMessage</p>
+</div>
+<div class="alert alert-danger">
+    <h5> Expection Stack Trace</h5>
+    <hr />
+    <p>@ViewBag.ExceptionStacktrace</p>
+</div>*@
